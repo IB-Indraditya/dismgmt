@@ -11,6 +11,9 @@
     --theme-blue-fade: rgba(0, 0, 255, .1);
     --theme-skyblue: #23A6F0;
 }
+body{
+    font-family: serif;
+}
 .minscreen{
     max-width: 1920px;
     min-width: 240px;
