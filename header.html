@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>S&IB Header</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
   <style>
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030;
+    }
     .top-bar {
       background-color: #002366;
       color: white;
@@ -32,79 +39,84 @@
     .navbar-nav .dropdown-menu {
       font-size: 14px;
     }
+    body {
+      padding-top: 122px; /* Height of both headers combined */
+    }
   </style>
 </head>
 <body>
 
-  <!-- Top Bar -->
-  <div class="top-bar py-1">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div>
-        <i class="bi bi-telephone"></i> Call: 08069200100 &nbsp;&nbsp;
-        <i class="bi bi-envelope"></i> <a href="mailto:sib@sibservices.in">sib@sibservices.in</a>
-      </div>
-      <div>
-        <a href="#"><i class="bi bi-facebook me-2"></i></a>
-        <a href="#"><i class="bi bi-instagram me-2"></i></a>
-        <a href="#"><i class="bi bi-linkedin me-2"></i></a>
-        <a href="#"><i class="bi bi-youtube"></i></a>
+  <!-- Fixed Header -->
+  <div class="fixed-header">
+    <!-- Top Bar -->
+    <div class="top-bar py-1">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>
+          <i class="bi bi-telephone"></i> Call: 08069200100 &nbsp;&nbsp;
+          <i class="bi bi-envelope"></i> <a href="mailto:sib@sibservices.in">sib@sibservices.in</a>
+        </div>
+        <div>
+          <a href="#"><i class="bi bi-facebook me-2"></i></a>
+          <a href="#"><i class="bi bi-instagram me-2"></i></a>
+          <a href="#"><i class="bi bi-linkedin me-2"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
       </div>
     </div>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand navbar-logo" href="#">
+          S&IB<br /><span>A SYMBOL OF TRUST</span>
+        </a>
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Vision</a></li>
+                <li><a class="dropdown-item" href="#">Mission</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Security</a></li>
+                <li><a class="dropdown-item" href="#">Facility</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IT/IOTs</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AI</a></li>
+                <li><a class="dropdown-item" href="#">IoT</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Reports</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">DDUGKY</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 
-  <!-- Main Navigation -->
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
-    <div class="container">
-      <!-- Logo -->
-      <a class="navbar-brand navbar-logo" href="#">
-        S&IB<br><span>A SYMBOL OF TRUST</span>
-      </a>
-      <!-- Toggler for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Nav Items -->
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Vision</a></li>
-              <li><a class="dropdown-item" href="#">Mission</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Security</a></li>
-              <li><a class="dropdown-item" href="#">Facility</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IT/IOTs</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">AI</a></li>
-              <li><a class="dropdown-item" href="#">IoT</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Reports</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">DDUGKY</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Bootstrap Icons & JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
