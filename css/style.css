@@ -12,7 +12,7 @@
     --theme-skyblue: #23A6F0;
 }
 body{
-    font-family: serif !important;
+    font-family: sans-serif !important;
 }
 .minscreen{
     max-width: 1920px;
