@@ -1,214 +1,110 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="images/logo.png">
-    <style>
-        .fa-angle-down{
-            transform: translateY(0px);
-            font-size: 10px;
-        }
-        li{
-            list-style: none;
-        }
-        .navitemcontainer{
-            display: flex;
-            transform: translate(100px, 0px);
-        }
-        @media (max-width: 1210px){
-            .navitemcontainer{
-                transform: translate(0px, 0px);
-            }
-        }
-        @media (max-width: 767px){
-            .navcontact{
-                visibility: collapse;
-            }
-            .brandnav{
-                transform: translateY(15px);
-            }
-        }
-        @media (max-width: 992px){
-            .navitemcontainer .nav-item {
-                margin: 1rem !important;
-                flex-direction: column;
-            }
-            .brandnav{
-                transform: translateY(15px);
-            }
-            .navcontact{
-                visibility: collapse;
-            }
-            .br{
-                display: none;
-            }
-            .dropdowns{
-                position: relative !important;
-                transform: translateX(-20px) !important;
-                border: none !important;
-                background-color: transparent !important;
-            }
-        }
-        .nav-link{
-            font-weight: bold;
-        }
-        .dropdowns{
-            position: absolute;
-            background-color: white;
-            border: solid 0px darkslategrey;
-            border-radius: 5px;
-            /* display: none; */
-            width: 240px;
-            max-height: 0;
-            overflow: hidden;
-            transition: .5s;
-            transform: translateX(-50px);
-        }
-        .nav-item:hover .dropdowns{
-            /* display: block; */
-            max-height: 400px;
-            border: solid 1px darkslategrey;
-        }
-        .drop a{
-            text-decoration: none;
-            color: darkslategrey;
-        }
-        .drop{
-            padding: 5px;
-        }
-        .drop:hover a{
-            color: #4475F2 !important;
-            /* background: gainsboro; */
-        }
-        @media(max-width: 1075px){
-            .navitemcontainer .nav-item {
-                margin: 0 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S&IB Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .top-bar {
+      background-color: #002366;
+      color: white;
+      font-size: 14px;
+    }
+    .top-bar a {
+      color: white;
+      text-decoration: none;
+    }
+    .navbar-logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #002366;
+    }
+    .navbar-logo span {
+      display: block;
+      font-size: 12px;
+      color: #666;
+    }
+    .nav-link {
+      color: #002366 !important;
+      font-weight: 500;
+    }
+    .navbar-nav .dropdown-menu {
+      font-size: 14px;
+    }
+  </style>
 </head>
-<section class="d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary p-3 mx-auto" style="max-width: 1920px;">
-        <div class="container">
-            <div class="brand d-flex text-white brandnav">
-                <a href=""><section class="mx-2 text-white"><i class="fa-brands fa-facebook-f fa-xl"></i></section></a>
-                <a href=""><section class="mx-2 text-white"><i class="fa-brands fa-instagram fa-xl"></i></section></a>
-                <a href=""><section class="mx-2 text-white"><i class="fa-brands fa-twitter fa-xl"></i></section></a>
-                <a href=""><section class="mx-2 text-white"><i class="fa-brands fa-linkedin fa-xl"></i></section></a>
-                <a href=""><section class="mx-2 text-white"><i class="fa-brands fa-youtube fa-xl"></i></section></a>
-                <a href=""><section class="mx-2 text-white"><i class="fa-brands fa-whatsapp fa-xl"></i></section></a>
-            </div>
-            
-            
-            <div class="navcontact">
-                <a class="navbar-brand text-white" href="tel:+919266340402">
-                    <i class="fa-solid fa-phone fa-large"></i>&nbsp;<span class="text-white">+91 9266340402</span>
-                </a>
-                <a class="navbar-brand text-white" href="mailto:Oneclicktour24@gmail.com">
-                    <i class="fa-solid fa-envelope fa-large"></i>&nbsp;<span class="text-white">Oneclicktour24@gmail.com</span>
-                </a>
-            </div>
-            
-            
-            
-        
-        </div>
-    </nav>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light p-4 mx-auto d-flex" style="max-width: 1920px; margin-top: 3.6rem;">
-        <div class="container">
-            <div class="brand">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/logo.png" alt="Logo" height="30">
-                    <a href="" class="fw-bold">Delhi Travels</a>
-                </a>
-            </div>
-            
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content" style="border: none !important;">
-                <div class="hamburger-toggle">
-                    <div class="hamburger">
-                    <span><i class="fa-solid fa-chart-simple fa-rotate-90" style="color: var(--theme-blue);"></i></span>
-                    </div>
-                </div>
-            </button>
-            
-            
-            <div class="collapse navbar-collapse " id="navbar-content">
-                <ul class="mb-2 mb-lg-0 navitemcontainer" style="list-style: none;">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#about">About</a>
-                        <!-- <br class="br">
-                        <ul class="dropdowns">
-                            <li class="drop"><a href="">About Us</a></li>
-                            <li class="drop"><a href="">Corporate</a></li>
-                            <li class="drop"><a href="">Vision/Mission</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-item drophead">
-                        <a class="nav-link" href="index.html#vehicle">Car&nbspRental</a>
-                        <!-- <br class="br">
-                        <ul class="dropdowns">
-                            <li class="drop"><a href="">Toyota Innova Car</a></li>
-                            <li class="drop"><a href="">Toyota Avalon Car</a></li>
-                            <li class="drop"><a href="">Swift Dzire Car Rent</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#tour">Tour&nbspPackages</a>
-                        <!-- <br class="br">
-                        <ul class="dropdowns">
-                            <li class="drop"><a href="">About Us</a></li>
-                            <li class="drop"><a href="">Corporate</a></li>
-                            <li class="drop"><a href="">Vision/Mission</a></li>
-                            <li class="drop"><a href="">About Us</a></li>
-                            <li class="drop"><a href="">Corporate</a></li>
-                            <li class="drop"><a href="">Vision/Mission</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#testimony">Testimonial</a>
-                        <!-- <br class="br">
-                        <ul class="dropdowns">
-                            <li class="drop"><a href="">About Us</a></li>
-                            <li class="drop"><a href="">Corporate</a></li>
-                            <li class="drop"><a href="">Vision/Mission</a></li>
-                            <li class="drop"><a href="">Vision/Mission</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="javascript:void();">Payment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#contactus">Contact&nbspUs</a>
-                    </li>
-                </ul>
-                
-            </div>
-            <!-- <div class="navlocation">
-                <a class="navbar-brand" href="javascript:void();">
-                    <i class="fa-solid fa-phone fa-large" style="color: var(--theme-blue);"></i>&nbsp<span>Contact&nbspUs</span>
-                </a>
-            </div> -->
-            
-            
-            
-        
-        </div>
-    </nav>
-</section>
-<script>
-    document.querySelector('.hamburger').addEventListener("click", ()=>{
-        document.querySelector(".navbar-collapse").classList.remove('show');
-        // document.querySelector(".navbar-collapse").classList.toggle('show');
-        document.querySelector(".navitemcontainer").classList.toggle('show');
-        document.querySelector(".navcontact").classList.toggle('showblock');
-    });
-</script>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar py-1">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>
+        <i class="bi bi-telephone"></i> Call: 08069200100 &nbsp;&nbsp;
+        <i class="bi bi-envelope"></i> <a href="mailto:sib@sibservices.in">sib@sibservices.in</a>
+      </div>
+      <div>
+        <a href="#"><i class="bi bi-facebook me-2"></i></a>
+        <a href="#"><i class="bi bi-instagram me-2"></i></a>
+        <a href="#"><i class="bi bi-linkedin me-2"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand navbar-logo" href="#">
+        S&IB<br><span>A SYMBOL OF TRUST</span>
+      </a>
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Vision</a></li>
+              <li><a class="dropdown-item" href="#">Mission</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Security</a></li>
+              <li><a class="dropdown-item" href="#">Facility</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IT/IOTs</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">AI</a></li>
+              <li><a class="dropdown-item" href="#">IoT</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Reports</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">DDUGKY</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Career</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap Icons & JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
