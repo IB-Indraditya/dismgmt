@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>S&IB</title>
+  <title>DIS Management Pvt Ltd</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Bootstrap CSS -->
@@ -68,13 +68,26 @@
     .dropdown-menu a:hover {
       background-color: #f8f9fa;
     }
-
+     @media (max-width: 1200px) {
+        #mainNav{
+            position: relative !important;
+            /* right: 0; */
+        }
+     }
     @media (max-width: 992px) {
       .topbar .contact-info,
       .topbar .social-icons {
         text-align: center;
         margin: 5px 0;
       }
+      #mainNav{
+            position: relative !important;
+            right: 0;
+        }
+    .dropdown-menu{
+        border: 0;
+        box-shadow: none;
+    }
     .navbar-collapse{
         align-items: start !important;
     }
@@ -83,6 +96,11 @@
         right: 0 !important;
     } */
     }
+    #mainNav{
+        position: absolute;
+        right: 0;
+    }
+    
   </style>
 </head>
 
@@ -91,8 +109,8 @@
   <div class="container-fluid topbar">
     <div class="row px-3">
       <div class="col-md-6 contact-info d-flex align-items-center">
-        <i class="fas fa-phone"></i> Call: 08069200100&nbsp;&nbsp;
-        <i class="fas fa-envelope"></i> sib@sibservices.in
+        <i class="fas fa-phone"></i> Call: 9051972409&nbsp;&nbsp;
+        <i class="fas fa-envelope"></i> Dis.facility@outlook.com
       </div>
       <div class="col-md-6 text-md-end social-icons d-flex justify-content-md-end justify-content-center align-items-center">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -107,14 +125,14 @@
   <nav class="navbar navbar-expand-lg main-navbar">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="images/logo.png" alt="Logo" class="me-2">
-        <div class="fw-bold" style="color:#002060;">S&IB</div>
+        <img src="images/logo.jpeg" alt="Logo" class="me-2">
+        <div class="fw-bold" style="color:#002060;">DIS Management Pvt Ltd</div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="mainNav" style="position: absolute; right: 0;">
+      <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <!-- About Us -->
           <li class="nav-item dropdown">
@@ -172,7 +190,7 @@
             <a class="nav-link" href="#">Career</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#">Contact&nbspUs</a>
           </li>
         </ul>
       </div>
