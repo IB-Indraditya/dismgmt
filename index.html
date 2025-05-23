@@ -214,7 +214,7 @@
                 </button>
             </div>
         </section>
-        <section class="py-5 bg-light">
+        <section class="py-5 bg-light w-100">
         <div class="container">
             <div class="row align-items-center">
             <!-- Image Column -->
@@ -235,7 +235,7 @@
             </div>
         </div>
         </section>
-        <section class="py-5" style="background-color: #d6d6d6;">
+        <section class="py-5 w-100" style="background-color: #d6d6d6;">
         <div class="container">
             <div class="row g-4">
             <!-- Mission -->
@@ -272,10 +272,10 @@
             </div>
         </div>
         </section>
-        <section class="py-5" style="background-color: #f5f5f5;">
+        <section class="py-5 mt-4 rounded-3" style="background-color: #002060;">
         <div class="container">
             <div class="row text-center mb-4">
-            <h2 class="text-primary fw-bold">Our Services</h2>
+            <h2 class="text-white fw-bold">Our Services</h2>
             </div>
             <div class="row g-4">
             <!-- Service Item -->
@@ -414,7 +414,7 @@
             </div>
         </section>
 
-        <section id="clients" class="bg-light py-5 px-3">
+        <section id="clients" class="bg-primary py-5 px-3 rounded-3">
             <div class="container">
                 <h2 class="text-center fw-bold mb-4">
                     <i class="fa-solid fa-handshake-angle"></i>&nbsp;&nbsp;Client List
@@ -473,7 +473,7 @@
                 </div>
             </div>
         </section>
-        <section id="gallery" class="bg-light py-5">
+        <section id="gallery" class="bg-light w-100 py-5 px-3 mt-4">
             <div class="container">
                 <h2 class="text-center fw-bold mb-4">
                     <i class="fa-solid fa-image"></i>&nbsp;&nbsp;Our Gallery
@@ -494,6 +494,38 @@
                 </div>
             </div>
         </section>
+        <section id="career" class="bg-white py-5">
+            <div class="container">
+                <h2 class="text-center fw-bold mb-4">
+                <i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;Join Our Team
+                </h2>
+                <form id="careerForm" class="row g-3 shadow p-4 rounded bg-light">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="position" class="form-label">Position Applied For</label>
+                    <input type="text" class="form-control" id="position" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Additional Information</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-4">Submit via WhatsApp</button>
+                </div>
+                </form>
+            </div>
+        </section>
 
 
         <footer id="tfooter" class="w-100"></footer>
@@ -504,6 +536,26 @@
     // loadHTML('body.html', 'tbody');
     loadHTML('footer.html', 'tfooter');
 </script>
+<script>
+document.getElementById("careerForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  // Replace with your WhatsApp number (with country code, no +)
+  var phone = "919051972409";
+
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phoneInput = document.getElementById("phone").value;
+  var position = document.getElementById("position").value;
+  var message = document.getElementById("message").value;
+
+  var whatsappMessage = `Career Application%0A----------------------%0AName: ${name}%0AEmail: ${email}%0APhone: ${phoneInput}%0APosition: ${position}%0AMessage: ${message}`;
+
+  var url = `https://wa.me/${phone}?text=${whatsappMessage}`;
+  window.open(url, "_blank");
+});
+</script>
+
 <script>
     $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
