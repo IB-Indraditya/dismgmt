@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/dynamic.js"></script>
+
+  <!-- Bootstrap CSS & JS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    @media(max-width: 1250px) {
+      .gallerycol3 { width: auto !important; }
+    }
+    @media(max-width: 960px) {
+      .gallery3 { width: auto !important; height: 28rem !important; }
+      .carousel-inner { max-height: 750px; }
+      .carousel-inner img { height: 500px !important; }
+      .carousel-caption { display: none; }
+    }
+    @media(max-width: 560px) {
+      .gallery3 { height: 38rem !important; }
+      .carousel-inner img { height: 400px !important; }
+    }
+    @media(max-width: 450px) {
+      .gallery3 { height: 48rem !important; }
+    }
+    @media(max-width: 660px) {
+      .heroimgbox { min-width: 0 !important; }
+      .favdesh1 { font-size: 35px; }
+      .reservecon, .attract { min-width: 100% !important; }
+      .testimonialdiv { width: 100% !important; }
+      .minscreen { overflow: hidden; }
+    }
+    @media(max-width: 400px) {
+      .carousel-inner img { height: 300px; }
+    }
+
+    .carousel-inner { max-height: 750px; }
+    .carousel-inner img { height: 800px; }
+    .owl-carousel .owl-item img { height: 220px; }
+    .imgbox .text-center .pricedisplay { display: none; }
+    .imgbox p { text-transform: capitalize; }
+    .item img { height: 600px !important; }
+  </style>
+</head>
+
+<body>
+  <section class="minscreen">
+    <header id="theader" class="w-100 fixed-top"></header>
+
+    <section class="hero py-5 pb-3 w-100 mt-5" style="background-color: #191970;">
+      <div class="container text-center text-white py-5">
+        <h1 class="display-4 fw-bold mt-5">Testimonial</h1>
+        <p class="lead mt-3 mb-4"><a href="index.html" class="text-warning">Home</a> <i class="fa-solid fa-angles-right"></i> Testimonial</p>
+      </div>
+    </section>
+    <h1 id="testimonials" class="text-center mx-auto mt-5 mb-3 pt-2 fw-bold">
+        <i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;What Our Clients Say
+    </h1>
+    <section class="testimonials px-5 w-100 pb-5 d-flex justify-content-center" style="padding-top: 2rem;">
+            <div class="owl-carousel px-0 mx-auto">
+                <div class="imgbox d-block rounded-3 bg-light p-4 text-center">
+                    <img src="https://www.callpage.io/_next/image?url=https%3A%2F%2Fstrapi.callpage.io%2Fuploads%2Fwepik_export_20231020142028_OH_Db_6c11964315.webp&w=1920&q=75" alt="Client 1" class="rounded-circle mb-3" width="80" height="80">
+                    <p class="fw-bold">Amit Roy</p>
+                    <p class="fst-italic">"Great experience with their 17-seater Urbania. Clean, comfortable, and timely!"</p>
+                    <div class="text-warning">★★★★★</div>
+                </div>
+                <div class="imgbox d-block rounded-3 bg-light p-4 text-center">
+                    <img src="https://emoneyadvisor.com/blog/wp-content/uploads/2025/03/HOA_2025-Tax-Legislation-Insights-1.jpg" alt="Client 2" class="rounded-circle mb-3" width="80" height="80">
+                    <p class="fw-bold">Neha Sharma</p>
+                    <p class="fst-italic">"Professional drivers and excellent condition vehicles. Highly recommended!"</p>
+                    <div class="text-warning">★★★★★</div>
+                </div>
+                <div class="imgbox d-block rounded-3 bg-light p-4 text-center">
+                    <img src="https://www.safetrac.com.au/wp-content/uploads/2024/09/shutterstock_1922861261-1024x683.jpg" alt="Client 3" class="rounded-circle mb-3" width="80" height="80">
+                    <p class="fw-bold">Rajesh Malhotra</p>
+                    <p class="fst-italic">"We booked the 20-seater Tempo Traveller for a wedding. Everything was smooth."</p>
+                    <div class="text-warning">★★★★☆</div>
+                </div>
+                <div class="imgbox d-block rounded-3 bg-light p-4 text-center">
+                    <img src="https://www.customerservicemanager.com/wp-content/uploads/2022/04/fp-6767654.jpg" alt="Client 4" class="rounded-circle mb-3" width="80" height="80">
+                    <p class="fw-bold">Sonal Jain</p>
+                    <p class="fst-italic">"Affordable pricing and well-maintained vehicles. Definitely booking again!"</p>
+                    <div class="text-warning">★★★★★</div>
+                </div>
+            </div>
+        </section>
+
+    <footer id="tfooter" class="w-100"></footer>
+  </section>
+
+  <script>
+    loadHTML('header.html', 'theader');
+    loadHTML('footer.html', 'tfooter');
+
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        rtl: false,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          800: { items: 3 },
+          1000: { items: 4 }
+        }
+      });
+    });
+
+    $(window).on("load", function () {
+      setTimeout(function () {
+        $(".owl-carousel").trigger("refresh.owl.carousel");
+      }, 100);
+    });
+
+    function updateBeforeContent(selector, text) {
+      document.querySelector(selector).style.setProperty('--content', `"${text}"`);
+    }
+
+    updateBeforeContent('.favdes .ib1', 'Kashmir – Paradise on Earth, with scenic valleys, serene lakes, snowy peaks, and rich culture.');
+    updateBeforeContent('.favdes .ib2', 'Manali – A Himalayan paradise with snow-capped peaks, lush valleys, adventure sports, and serene beauty.');
+    updateBeforeContent('.favdes .ib3', 'Agra – Home to the iconic Taj Mahal, rich history, Mughal architecture, and timeless cultural heritage.');
+    updateBeforeContent('.favdes .ib4', 'Jaipur – The Pink City of royal palaces, vibrant culture, majestic forts, and rich heritage.');
+
+    AOS.init();
+  </script>
+</body>
+</html>

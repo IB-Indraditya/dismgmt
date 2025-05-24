@@ -70,8 +70,8 @@
     }
      @media (max-width: 1200px) {
         #mainNav{
-            position: relative !important;
-            /* right: 0; */
+            /* position: relative !important; */
+            right: 2rem;
         }
      }
     /* @media (max-width: 420px) {
@@ -85,6 +85,11 @@
         text-align: center;
         margin: 5px 0;
       }
+       @media (max-width: 412px) {
+        .mgt{
+            display: none;
+        }
+        }
       #mainNav{
             position: relative !important;
             right: 0;
@@ -103,9 +108,8 @@
     }
     #mainNav{
         position: absolute;
-        right: 0;
+        right: 3.2rem;
     }
-    
   </style>
 </head>
 
@@ -129,9 +133,9 @@
   <!-- Main Navbar -->
   <nav class="navbar navbar-expand-lg main-navbar">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
         <img src="images/logo.jpeg" alt="Logo" class="me-2">
-        <div class="fw-bold brandname" style="color:#002060;">DIS Management Pvt Ltd</div>
+        <div class="fw-bold brandname" style="color:#002060;">DIS <span class="mgt">Management Pvt Ltd</span></div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
@@ -141,12 +145,12 @@
         <ul class="navbar-nav mb-2 mb-lg-0">
           <!-- About Us -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
-            <ul class="dropdown-menu">
+            <a class="nav-link " href="about.html" data-bs-toggle="">About Us</a>
+            <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Our Company</a></li>
               <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
               <li><a class="dropdown-item" href="#">Leadership</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <!-- Services -->
@@ -161,41 +165,41 @@
 
           <!-- IT/IOTs -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">IT/IOTs</a>
-            <ul class="dropdown-menu">
+            <a class="nav-link" href="testimonial.html" data-bs-toggle="">Testimonial</a>
+            <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Surveillance</a></li>
               <li><a class="dropdown-item" href="#">Automation</a></li>
               <li><a class="dropdown-item" href="#">AI & Analytics</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <!-- Media -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Media</a>
-            <ul class="dropdown-menu">
+            <a class="nav-link" href="media.html" data-bs-toggle="">Media</a>
+            <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">News</a></li>
               <li><a class="dropdown-item" href="#">Gallery</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <!-- Resources -->
-          <li class="nav-item dropdown">
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Brochures</a></li>
               <li><a class="dropdown-item" href="#">Reports</a></li>
             </ul>
-          </li>
+          </li> -->
 
           <!-- Other Links -->
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">DDUGKY</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Career</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Career</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact&nbspUs</a>
+            <a class="nav-link" href="contact.html">Contact&nbspUs</a>
           </li>
         </ul>
       </div>
