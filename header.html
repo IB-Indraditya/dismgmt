@@ -87,11 +87,6 @@
         text-align: center;
         margin: 5px 0;
       }
-       @media (max-width: 412px) {
-        .mgt{
-            display: none;
-        }
-        }
       #mainNav{
             position: relative !important;
             right: 0;
@@ -108,6 +103,21 @@
         right: 0 !important;
     } */
     }
+     @media (max-width: 800px) {
+        #mainNav{
+            position: relative !important;
+            right: auto !important;
+        }
+    }
+     @media (max-width: 412px) {
+        .mgt{
+            display: none;
+        }
+        #mainNav{
+            position: relative !important;
+            right: auto !important;
+        }
+        }
     #mainNav{
         position: absolute;
         right: 3.2rem;
