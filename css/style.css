@@ -75,15 +75,21 @@ a{
         min-width: 0 !important;
     }
 }
+.row .mb-lg-0 img{
+    max-height: 300px;
+    border-radius: 0 !important;
+}
 .herop{
-    font-size: 15px;
+    font-size: 20px;
     color: var(--theme-blue);
-    padding: 5px;
+    padding: 20px 0;
     background-color: var(--theme-lightblue);
-    border-radius: 20px;
-    /* width: 300px; */
-    margin-right: 3rem;
-    margin-left: 3rem;
+    border-radius: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+    /* margin-right: 3rem; */
+    /* margin-left: 3rem; */
+    transform: translateY(-5rem);
 }
 .herotext{
     width: 500px;
