@@ -415,7 +415,7 @@
             </div>
         </section>
 
-        <section id="clients" class="bg-primary py-5 px-3 rounded-1">
+        <section id="clients" class="bg-darkblue py-5 px-3 rounded-0 w-100">
             <div class="container">
                 <h2 class="text-center fw-bold mb-4 text-white">
                     <i class="fa-solid fa-handshake-angle"></i>&nbsp;&nbsp;Client List
@@ -424,58 +424,81 @@
                 <!-- Owl Carousel wrapper -->
                 <div class="owl-carousel owl-theme">
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">1. Arannaya Bithi</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Arannaya Bithi</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">2. Mandalkuli Hospital</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Mandalkuli Hospital</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">3. Hotel Corporate In</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Hotel Corporate In</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">4. Hotel OPS</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Hotel OPS</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">5. SC Bagchi Araggya Sadan</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> SC Bagchi Araggya Sadan</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">6. Pratham Milon Garden</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Pratham Milon Garden</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">7. Daga Plastic Pvt Limited</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Daga Plastic Pvt Limited</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">8. Voice Public School</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Voice Public School</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">9. Green Touch Eco Resort</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Green Touch Eco Resort</p>
                         </div>
                     </div>
                     <div class="item">
-                        <div class="border rounded-3 p-3 py-5 bg-white shadow-sm h-100">
-                            <p class="mb-0 fw-semibold">10. Central Nursing Home</p>
+                        <div class="border rounded-3 p-1 py-5 bg-white shadow-sm h-100">
+                            <p class="mb-0 fw-semibold text-center"> Central Nursing Home</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    nav: false,
+                    autoplay: true,
+                    autoplayTimeout: 2500,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 2
+                        },
+                        1000: {
+                            items: 3
+                        }
+                    }
+                });
+            });
+        </script>
 
         <section id="gallery" class="bg-light w-100 py-5 px-3 mt-4">
             <div class="container">
